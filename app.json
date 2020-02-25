@@ -1,0 +1,14 @@
+{
+    "name": "nodejs-k8s-resourcing-exp",
+    "script": "src/index.js",
+    "exec_mode": "cluster",
+    "node_args": ["--max_old_space_size=3200", "--max-http-header-size=16384"],
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 80
+    },
+    "env_production": {
+      "NODE_ENV": "production"
+    }
+  }
+  
